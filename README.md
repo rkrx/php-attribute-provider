@@ -1,6 +1,6 @@
 # php-attribute-provider
 
-A class to help working with php attributes in reflection.
+A lightweight PHP utility for simplifying the retrieval of attributes using reflection.
 
 ## Installation
 
