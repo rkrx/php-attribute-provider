@@ -1,6 +1,10 @@
 {
 	"name": "rkr/attribute-provider",
 	"description": "A class to help working with php attributes in reflection.",
+	"license": "MIT",
+	"homepage": "https://github.com/rkrx/php-attribute-provider",
+	"authors": [{"name": "Ron Kirschler", "email": "ron.kirschler@gmail.com"}],
+	"keywords": ["attributes", "reflection", "php"],
 	"require": {
 		"php": ">= 8.1"
 	},
