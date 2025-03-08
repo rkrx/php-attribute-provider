@@ -5,11 +5,10 @@ namespace Kir\Attributes;
 use Kir\Attributes\Subjects\MethodAttribute;
 use Kir\Attributes\Subjects\TestClass1;
 use Kir\Attributes\Subjects\PropertyAttribute;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
-/**
- * @see PropertyAttributeProvider
- */
+#[CoversClass(PropertyAttributeProvider::class)]
 class PropertyAttributeProviderTest extends TestCase {
     public function testGetAndGroupAllReflectionAttributesFromProperties(): void {
 		$factory = new ClassAttributeProviderFactory();

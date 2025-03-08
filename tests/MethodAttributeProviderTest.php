@@ -4,11 +4,10 @@ namespace Kir\Attributes;
 
 use Kir\Attributes\Subjects\MethodAttribute;
 use Kir\Attributes\Subjects\TestClass1;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
-/**
- * @see MethodAttributeProvider
- */
+#[CoversClass(MethodAttributeProvider::class)]
 class MethodAttributeProviderTest extends TestCase {
 	public function testGetAndGroupAllReflectionAttributesFromMethods(): void {
 		$factory = new ClassAttributeProviderFactory();

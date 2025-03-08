@@ -4,12 +4,11 @@ namespace Kir\Attributes;
 
 use Kir\Attributes\Subjects\ClassAttribute;
 use Kir\Attributes\Subjects\TestClass1;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 use ReflectionAttribute;
 
-/**
- * @see ClassAttributeProvider
- */
+#[CoversClass(ClassAttributeProvider::class)]
 class ClassAttributeProviderTest extends TestCase {
     public function testGetAllReflectionAttributes(): void {
 		$factory = new ClassAttributeProviderFactory();

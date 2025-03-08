@@ -105,9 +105,8 @@ class PropertyAttributeProvider {
 		);
 		$result = [];
 		foreach($groups as $methodName => $group) {
-			if(count($group) > 1) {
+			if(count($group)) {
 				$result[$methodName] = $group[0]->newInstance();
-				break;
 			}
 		}
 		return $result;
