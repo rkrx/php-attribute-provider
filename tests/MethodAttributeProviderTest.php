@@ -7,6 +7,8 @@ use Kir\Attributes\Subjects\TestClass1;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(ClassAttributeProvider::class)]
+#[CoversClass(ClassAttributeProviderFactory::class)]
 #[CoversClass(MethodAttributeProvider::class)]
 class MethodAttributeProviderTest extends TestCase {
 	public function testGetAndGroupAllReflectionAttributesFromMethods(): void {

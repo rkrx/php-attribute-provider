@@ -9,6 +9,7 @@ use PHPUnit\Framework\TestCase;
 use ReflectionAttribute;
 
 #[CoversClass(ClassAttributeProvider::class)]
+#[CoversClass(ClassAttributeProviderFactory::class)]
 class ClassAttributeProviderTest extends TestCase {
     public function testGetAllReflectionAttributes(): void {
 		$factory = new ClassAttributeProviderFactory();

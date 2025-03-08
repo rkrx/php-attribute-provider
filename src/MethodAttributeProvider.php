@@ -81,13 +81,9 @@ class MethodAttributeProvider {
 	 * @return ReflectionAttribute<T>[]
 	 */
 	public function getAllReflectionAttributesFromMethod(string $methodName, string $attributeFQN): array {
-		try {
-			return $this->reflectionClass
-				->getMethod($methodName)
-				->getAttributes($attributeFQN);
-		} catch (ReflectionException) {
-			return [];
-		}
+		return $this->reflectionClass
+			->getMethod($methodName)
+			->getAttributes($attributeFQN);
 	}
 
 	/**

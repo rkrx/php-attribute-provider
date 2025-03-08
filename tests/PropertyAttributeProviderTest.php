@@ -8,6 +8,8 @@ use Kir\Attributes\Subjects\PropertyAttribute;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(ClassAttributeProvider::class)]
+#[CoversClass(ClassAttributeProviderFactory::class)]
 #[CoversClass(PropertyAttributeProvider::class)]
 class PropertyAttributeProviderTest extends TestCase {
     public function testGetAndGroupAllReflectionAttributesFromProperties(): void {
