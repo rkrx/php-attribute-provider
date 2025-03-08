@@ -1,0 +1,11 @@
+/*
+!/src
+!/tests
+!/.editorconfig
+!/.gitignore
+!/composer.json
+!/LICENSE
+!/phpstan.neon
+!/phpunit.xml
+!/phpunit.php
+!/README.md

@@ -1,0 +1,24 @@
+{
+	"name": "rkr/attribute-provider",
+	"description": "A class to help working with php attributes in reflection.",
+	"require": {
+		"php": ">= 8.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"Kir\\Attributes\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Kir\\Attributes\\": "tests/"
+		}
+	},
+	"require-dev": {
+		"phpunit/phpunit": "*",
+		"phpstan/phpstan": "^2.1"
+	},
+	"scripts": {
+		"phpstan": "phpstan analyse"
+	}
+}
